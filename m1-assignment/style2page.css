@@ -1,0 +1,265 @@
+header {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 3em;
+  height: 400px;
+  position: relative;
+}
+#home {
+  background: no-repeat url(images/Image5-1.jpg);
+  margin-right: 30px;
+  background-size: 1500px;
+  opacity: 0.5;
+  height: 400px;
+  width: 100%;
+  background-position: center;
+}
+#contact {
+  background: no-repeat url(images/Image3.jpg);
+  margin-right: 30px;
+  background-size: 1500px;
+  opacity: 0.5;
+  height: 400px;
+  width: 100%;
+  background-position: center;
+}
+.main-header {
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  left: 150px;
+  margin-top: 10px;
+  top: 0px;
+}
+.main-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 1em;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+  font: Arial, Helvetica, sans-serif;
+  margin-left: 250px;
+ 
+}
+.main-menu ul li a:visited {
+  color: #000;
+}
+.main-menu ul li a:hover {
+  color: #9ed034;
+}
+/*logo align*/
+.main-header .logo img {
+  width: 70px;
+  height: 120px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+/*spacing between image and main content*/
+.main-content h1 {
+  font: arial, helvetica, sans-serif;
+  color: #9ed034;
+  display: inline;
+}
+.main-content {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+table {
+  width: 1000px;
+  margin: 4em auto 0 auto;
+}
+caption {
+  background: #d34127;
+  height: 40px;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 1em;
+}
+/*table head*/
+            thead {
+                background: #55acee;
+            }
+            tbody {
+                background: rgb(206, 243, 206);
+                text-align: center;
+            }
+            th,td {
+                width: 225px;
+                height: 75px;
+                vertical-align: middle;
+                border: solid 2px #850B1B;
+            }
+            th:first-child {
+                width: 125px;
+                height: 50px;
+            }
+            
+section h1 {
+  font: arial, helvetica, sans-serif;
+  color: #2a2ddd;
+  margin: 0 0 0 130px;
+}
+#Industries {
+  margin-left: 80px;
+  color: rgb(223, 35, 35);
+}
+main {
+  margin-bottom: 50px;
+  margin-left: 150px;
+  margin-top: 10px;
+  margin-right:150px;
+
+}
+h3 {
+  color: #861aeb;
+  font-size:xx-large;
+  margin-left: 150px;
+}
+form {
+                margin: 15px 100px 0 130px;
+                text-transform: uppercase;
+                padding-bottom: 0.5em;
+                
+            }
+            fieldset {
+                border-color: #9ed034;
+                padding-left: 30px;
+                margin-right: 70px;
+                
+            }
+            legend {
+                color:#4977D1;
+                font-weight: bold;
+            }
+            label {
+                font-weight:bold;
+                display: block;
+                margin-top: 20px;
+                text-transform: lowercase;
+                font-size: large;
+            }
+            /*capitalization of the fist letter */
+            label::first-letter {
+                text-transform: uppercase;
+            }
+            input {
+                width: 500px;
+                margin-top: 20px;
+            }
+            input[type="radio"] {
+                width: 35px;
+                
+            }
+            input[type="radio"] {
+                background-color: red;
+            }
+            .radios::first-child {
+                text-transform: capitalize;
+            }
+            /* inline radio*/
+            .radios {
+                display: inline;
+                
+            } 
+            .services {
+                margin-top: 15px;
+                margin-bottom: 35px;
+                text-transform: capitalize;
+            }
+            .services::first-letter {
+                text-transform: uppercase;
+            }
+            /*inline drop down menu*/
+            .drop-down {
+                display:inline;
+                width: 100%;
+            }
+            .selectmenu {
+                margin-top: 15px;
+            }
+            .selectmenu::first-letter {
+                text-transform: uppercase;
+            }
+            .selectmenu select {
+                width: 150px;
+            }
+            /*comment text area*/
+            textarea {
+                width: 500px;
+                height: 150px;
+                resize: both;
+                overflow: auto;
+            }
+            .contactinfo {
+                margin-left:  80px;
+                margin-top: 30px;
+            }
+            form .button {
+            padding: 0 380px 15px ;
+            }
+            input[type="submit"] {
+                display:block;
+                margin:10px 0 10px 0;
+                width: 120px;
+                background-color: #4977D1;
+                color: #fff;
+                height: 30px;
+            }
+/*footer styling*/
+            footer {
+                width: 100%;
+                height: 150px;
+                padding-bottom: 5em;
+                background-color: #ecfab8;
+                padding-top: auto;
+                
+            }
+            footer #nondisclaimer .copy {
+                float:right;
+                padding: 10em 1em 0 0;
+                font-size: 0.9em;
+            }
+            footer #nondisclaimer .social {
+                padding: 2.5em;
+                margin-right: 9.25em;
+                float: right;
+            }
+            footer #disclaimer {
+                clear:both;
+            }
+            footer #disclaimer p {
+                text-align: center;
+            }
+        .social .fa {
+                padding: 15px;
+                font-size: 15px;
+                width: 15px;
+                text-align: center;
+                text-decoration: none;
+                margin: 0 4px;
+                border-radius: 50%;
+            }
+            footer #nondisclaimer .social .fa:hover {
+                opacity: 0.7;
+            }
+            footer #nondisclaimer .social .fa-facebook {
+                background: #3b5998;
+                color:white;
+            }
+            footer #nondisclaimer .social .fa-twitter {
+                background: #55acee;
+                color:white;
+                }
+            footer #nondisclaimer .social .fa-instagram{
+                background: #125688;
+                color:white;
+            }
+            .address {
+                padding: 20px 0 20px 50px;
+            }
+            .phone {
+                padding: 20px 0 20px 50px;
+            }
+            

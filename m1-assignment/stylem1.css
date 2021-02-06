@@ -1,0 +1,227 @@
+header {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 3em;
+  height: 400px;
+  position: relative;
+}
+#home {
+  background: no-repeat url(images/Image2-1.jpg);
+  margin-right: 30px;
+  background-size: 1500px;
+  opacity: 0.5;
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-position: right 45% bottom 5%;
+  
+}
+.main-header {
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  left: 150px;
+  margin-top: 10px;
+  top: 0px;
+  
+}
+.main-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 1em;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+  font: Arial, Helvetica, sans-serif;
+  margin-left: 250px;
+}
+.main-menu ul li a:visited {
+  color:#000;
+}
+.main-menu ul li a:hover {
+  color: #9ed034;
+}
+/*logo align*/
+.main-header .logo img {
+  width: 70px;
+  height: 120px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+/*spacing between image and main content*/
+.main-content h1 {
+  font: arial, helvetica, sans-serif;
+  color: #9ed034;
+  display:inline;
+  
+}
+.main-content {
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+section h2 {
+  font: arial, helvetica, sans-serif;
+  color: #2a2ddd;
+  margin: 0 0 0 200px;
+}
+#Industries {
+    margin-left: 180px;
+    color: rgb(223, 35, 35);
+}
+main {
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-right:150px;
+  
+}
+.goal {
+  width: 60px;
+  height: 60px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.best {
+  width: 60px;
+  height: 60px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+#gallery li {
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  
+}
+#gallery li:hover {
+  cursor: pointer;
+}
+#gallery li p {
+  position: absolute;
+  bottom: 150px;
+  width:448px;
+  height: 50px;
+  background-color: rgb(218, 213, 213);
+  text-align: center;
+  color:#000;
+  line-height: 2em;
+  visibility: hidden;
+  opacity: 90%;
+  font-weight: bolder;
+  padding-top:1em;
+}
+#gallery li:hover p {
+  visibility: visible;
+}
+.caption {
+  text-align: center;
+}
+#gallery {
+  margin-left: 220px;
+}
+
+/*footer styling*/
+            footer {
+                width: 100%;
+                height: 150px;
+                padding-bottom: 5em;
+                background-color: #ecfab8;
+                padding-top: auto;
+            }
+            footer #nondisclaimer .copy {
+                float:right;
+                padding: 10em 1em 0 0;
+                font-size: 0.9em;
+            }
+            footer #nondisclaimer .social {
+                padding: 2.5em;
+                margin-right: 9.25em;
+                float: right;
+            }
+            footer #disclaimer {
+                clear:both;
+            }
+            footer #disclaimer p {
+                text-align: center;
+            }
+        .social .fa {
+                padding: 15px;
+                font-size: 15px;
+                width: 15px;
+                text-align: center;
+                text-decoration: none;
+                margin: 0 4px;
+                border-radius: 50%;
+            }
+            footer #nondisclaimer .social .fa:hover {
+                opacity: 0.7;
+            }
+            footer #nondisclaimer .social .fa-facebook {
+                background: #3b5998;
+                color:white;
+            }
+            footer #nondisclaimer .social .fa-twitter {
+                background: #55acee;
+                color:white;
+                }
+            footer #nondisclaimer .social .fa-instagram{
+                background: #125688;
+                color:white;
+            }
+            .address {
+                padding: 20px 0 20px 50px;
+            }
+            .phone {
+                padding: 20px 0 20px 50px;
+            }
+            .description {
+  position: absolute;
+  bottom: 150px;
+  width: 450px;
+  height: 50px;
+  visibility: hidden;
+  padding-top: 1em;
+  text-align: center;
+  color: blue;
+  background-color: #888;
+  opacity: 90%;
+  font-weight: bolder;
+}
+ #infoBox {
+  visibility: hidden;
+  position: absolute;
+  width: 450px;
+  height: 250px;
+  color: #fff;
+  left: 25em;
+  top: 25em;
+  background-color: #000;
+  opacity: 75%;
+  border-radius: 1em;
+}
+#titleOfBox {
+  margin: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-left: 0.3em;
+}
+
+#info {
+  margin: 1em;
+  padding-left: 1em;
+}
+
+#closeLink {
+  margin-top: 2em;
+  color: #ca974a;
+  text-align: center;
+  font-family: "Times New Roman";
+}
+
+#closeLink:hover {
+  cursor: pointer;
+}
+#gallery li:hover .description {
+  visibility: visible;
+}
