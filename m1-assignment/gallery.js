@@ -48,7 +48,7 @@ var infoTag = [
 var clickClose = ' Click This to close';
 for (var i = 0; i < 12; i++) {
   fileNames.push('Image' + (i + 1));
-  photos.push("<img src ='Gallery/" + fileNames[i] + ".jpg'>");
+  photos.push("<a href='#/' class='lightbox-toggle'>"+ "<img id='photo' src ='Gallery/" + fileNames[i] + ".jpg'" + "alt =" + 'alt' + fileNames[i] + ">"  + "</a>" );
   image =
     openList +
     photos[i] +
@@ -95,3 +95,79 @@ function closeBox() {
   document.getElementById("infoBox").style.visibility = "hidden";
 
 }
+
+$(document).ready(function () {
+  $('.lightbox-toggle img').click(function () {
+    $('.backdrop')
+      .animate({ opacity: '.50' }, 300, 'linear')
+      .css('display', 'block');
+    $('.box').fadeIn();
+
+    //Check if lightbox has an image
+    if ($('.box').contents('img')) {
+      $('.box').contents().remove('img'); //If true, clear image
+    }
+
+    //Get text content in attribute
+    var $altvalue = $(this).attr('alt'); //or var altvalue = $(this).attr('alt');
+
+    if ($altvalue == "altImage1") {
+      var img = $('#photo:first-child img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+    }
+    else if ($altvalue == "altImage2") {
+      var img = $('#photo:nth-child(2) img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+
+    }
+    else if ($altvalue == "altImage3") {
+      var img = $('#photo:nth-child(3) img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+
+    } else if ($altvalue == "altImage4") {
+      var img = $('#photo:nth-child(4) img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+
+    } else if ($altvalue == "altImage5") {
+      var img = $('#photo:nth-child(5) img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+
+    } else if ($altvalue == "altImage6") {
+      var img = $('#photo:nth-child(6) img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+
+    } else if ($altvalue == "altImage7") {
+      var img = $('#photo:nth-child(7) img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+
+    } else if ($altvalue == "altImage8") {
+      var img = $('#photo:nth-child(8) img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+
+    } else if ($altvalue == "altImage9") {
+      var img = $('#photo:nth-child(9) img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+
+    } else if ($altvalue == "altImage10") {
+      var img = $('#photo:nth-child(10) img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+
+    } else if ($altvalue == "altImage11") {
+      var img = $('#photo:nth-child(11) img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+
+    } else if ($altvalue == "altImage12") {
+      var img = $('#photo:last-child img').clone(); //Duplicate DOM element
+      $('.box').append(img); //Insert duplicated element in another element
+      
+    } else ($altvalue == "")
+  });
+
+  /* Click to close lightbox */
+  $('.close, .backdrop').click(function () {
+    $('.backdrop').animate({ opacity: '0' }, 300, 'linear', function () {
+      $('.backdrop').css('display', 'none');
+    });
+    $('.box').fadeOut();
+  });
+});
